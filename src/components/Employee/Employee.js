@@ -1,3 +1,4 @@
+import StateComponent from '../State/Statecomponents';
 import './Employee.css';
 
 // props are the properties
@@ -14,6 +15,8 @@ import './Employee.css';
             <hr></hr>
             <div> Joining date</div>
             <div>{props.date.toDateString()}</div>
+            <hr></hr> 
+            <StateComponent title = {props.name} ></StateComponent>
         </div>
     )
 }
